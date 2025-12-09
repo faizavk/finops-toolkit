@@ -26,7 +26,14 @@ function ServiceForecastChart({ data }) {
   data.long.forEach(item => {
     const date = item.date;
     if (!dateMap[date]) {
-      dateMap[date] = { date: new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) };
+      // UPDATED: Added year: 'numeric' to the formatting options
+      dateMap[date] = { 
+        date: new Date(date).toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'short', 
+          day: 'numeric' 
+        }) 
+      };
     }
     dateMap[date][item.service] = item.forecast;
   });
@@ -128,4 +135,3 @@ function ServiceForecastChart({ data }) {
 }
 
 export default ServiceForecastChart;
-

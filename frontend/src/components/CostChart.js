@@ -20,7 +20,7 @@ function CostChart({ data }) {
   }
 
   const chartData = data.map(item => ({
-    date: new Date(item.ds).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    date: new Date(item.ds).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }),
     cost: parseFloat(item.y)
   }));
 

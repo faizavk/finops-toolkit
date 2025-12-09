@@ -22,14 +22,24 @@ function ForecastChart({ historical, forecast }) {
   }
 
   // Combine historical and forecast data
+  // UPDATED: Added year: 'numeric'
   const historicalData = historical.map(item => ({
-    date: new Date(item.ds).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    date: new Date(item.ds).toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    }),
     actual: parseFloat(item.y),
     type: 'historical'
   }));
 
+  // UPDATED: Added year: 'numeric'
   const forecastData = forecast.map(item => ({
-    date: new Date(item.ds).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    date: new Date(item.ds).toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    }),
     forecast: parseFloat(item.yhat),
     forecastUpper: parseFloat(item.yhat_upper),
     forecastLower: parseFloat(item.yhat_lower),
@@ -37,6 +47,7 @@ function ForecastChart({ historical, forecast }) {
   }));
 
   // Find the last historical date
+  // This will now match the new format (e.g., "Dec 10, 2023") automatically
   const lastHistoricalDate = historicalData[historicalData.length - 1]?.date;
 
   // Combine data
@@ -225,4 +236,3 @@ function ForecastChart({ historical, forecast }) {
 }
 
 export default ForecastChart;
-
