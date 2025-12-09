@@ -1,0 +1,108 @@
+.security-insights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.insight-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.insight-section h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.insight-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.spikes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spike-item {
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  border-left: 3px solid #dc3545;
+}
+
+.spike-date {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.spike-details {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.spike-details span {
+  color: #555;
+}
+
+.spike-ratio {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.tag-badge.rare {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+.tag-badge.frequency {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #17a2b8;
+}
+
+.tag-badge.new {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+.no-issues {
+  color: #28a745;
+  font-weight: 500;
+  padding: 10px;
+  background: #d4edda;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 16px;
+}
+

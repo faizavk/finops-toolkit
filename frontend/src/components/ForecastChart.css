@@ -1,0 +1,92 @@
+.chart-container {
+  width: 100%;
+  padding: 20px 0;
+  background: white;
+  border-radius: 8px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 16px;
+}
+
+.forecast-info {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 18px 25px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.info-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box.actual {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.info-box.forecast {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.info-box.uncertainty {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+}
+
+.custom-tooltip {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-label {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+.tooltip-value {
+  margin: 4px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tooltip-value strong {
+  color: #333;
+  font-size: 16px;
+}
+

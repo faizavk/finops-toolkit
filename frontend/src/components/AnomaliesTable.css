@@ -1,0 +1,67 @@
+.anomalies-table-container {
+  overflow-x: auto;
+}
+
+.anomalies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.anomalies-table thead {
+  background: #667eea;
+  color: white;
+}
+
+.anomalies-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.anomalies-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.anomaly-row:hover {
+  background: #f8f9fa;
+}
+
+.cost-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+.deviation-cell.positive {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.deviation-cell.negative {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.btn-rca {
+  padding: 6px 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-rca:hover {
+  background: #5568d3;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 16px;
+}
+

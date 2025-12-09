@@ -1,0 +1,22 @@
+# Core Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+
+# Data Processing
+# Note: Using latest compatible versions for better Python 3.13 support
+# If you get build errors, these will use pre-built wheels
+numpy>=1.26.0,<2.0.0
+pandas>=2.1.0,<3.0.0
+
+# Machine Learning
+prophet>=1.1.5
+
+# Utilities
+python-dateutil==2.8.2
+
+# Production Server
+gunicorn==21.2.0
+
+# Security Packages
+flask-limiter==3.5.0
+marshmallow==3.20.1
