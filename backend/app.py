@@ -69,8 +69,8 @@ app = Flask(__name__)
 # Configure CORS - Allow from all origins (can be restricted in production)
 # In production, replace "*" with your frontend URL
 frontend_url = os.getenv('FRONTEND_URL', '*')
-CORS(app, resources={r"/api/*": {"origins": frontend_url if frontend_url != '*' else "*"}})
-
+#CORS(app, resources={r"/api/*": {"origins": frontend_url if frontend_url != '*' else "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 # Configure Rate Limiting (if available)
 if LIMITER_AVAILABLE:
     limiter = Limiter(
